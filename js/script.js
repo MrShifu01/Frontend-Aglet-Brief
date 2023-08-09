@@ -10,19 +10,10 @@ let scrollTween = gsap.to(sections, {
     pin: true,
     scrub: 1,
     end: "+=20000",
-  }
-});
-
-console.log(1 / (sections.length - 1))
-
-//Progress bar animation
-
-gsap.to(mask, {
-  width: "100%",
-  scrollTrigger: {
-    trigger: ".wrapper",
-    start: "top left",
-    scrub: 1
+    onUpdate: self => {
+      // Update the mask width based on the progress of the carousel's ScrollTrigger
+      gsap.set(mask, { width: self.progress * 65 + "%" });
+    }
   }
 });
 

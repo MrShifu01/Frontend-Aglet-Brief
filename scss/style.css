@@ -34,7 +34,8 @@ svg .mask {
 
 .container {
   display: flex;
-  width: 300vw;
+  position: relative;
+  overflow: hidden;
 }
 .container .col {
   display: flex;
@@ -42,6 +43,29 @@ svg .mask {
 }
 .container .col p {
   font-size: 0.8rem;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%; /* Adjust this value based on how wide you want the vignette effect */
+  pointer-events: none; /* Ensures that the overlay doesn't interfere with interactions */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 2; /* Adjust as needed to ensure the overlay is above the sections but below interactive elements */
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%; /* Adjust this value based on how wide you want the vignette effect */
+  pointer-events: none; /* Ensures that the overlay doesn't interfere with interactions */
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 999; /* Adjust as needed to ensure the overlay is above the sections but below interactive elements */
 }
 
 section {
