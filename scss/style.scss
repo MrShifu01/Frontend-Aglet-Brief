@@ -7,6 +7,8 @@ body {
     background-color: #000;
     color: #fff;
     position: relative;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 nav {
@@ -22,7 +24,7 @@ nav {
 
 .nav-image-container {
     width: 100px;
-    margin: 50px;
+    margin: 40px;
 }
 
 .nav-list {
@@ -31,7 +33,7 @@ nav {
     list-style: none;
     text-decoration: none;
     margin-right: 60px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
 }
 
@@ -48,7 +50,7 @@ svg {
     top: 12em;
     left: 50vw;
     width: 50vw;
-    transform: translateX(-30%);
+    transform: translateX(-30%) scaleY(0.8) scaleY(0.5);
 
     .mask {
         width: 0;
@@ -57,7 +59,7 @@ svg {
 
 .svg-container {
 position: absolute;
-bottom: calc((1/3 * 120%));
+bottom: calc((1/3 * 110%));
 }
 
 .container {
@@ -103,13 +105,16 @@ section {
     height: 100vh;
     display: flex;
     align-items: center;
+    // border: 1px solid yellow;
 }
 
 .image-container {
     display: flex;
     flex-direction: column;
-    width: 700px;
-    height: 600px;
+    width: 36.5vw;
+    height: 36.5vw;
+    min-height: 420px;
+    padding-top: 92px;
     // border: red 1px solid;
     overflow: hidden; 
 }
@@ -141,17 +146,25 @@ section {
 
 .text-container{
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     // border: 1px solid yellow;
 }
 
 .text-container h2{
-   font-size: 1.8rem;
+    transform: scaleY(0.9);
+    transform: scaleX(1.1);
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    font-size: 1.5vw;
 }
 
 .text-container p{
-    opacity: 0.35;
-    font-size: 1.3rem;
+    transform: scaleY(0.9);
+    transform: scaleX(1.1);
+    margin-top: 0.4rem;
+    opacity: 0.25;
+    font-size: 1vw;
     font-weight: 300;
 }
 
@@ -163,6 +176,7 @@ img {
     // border: green 1px solid;
 }
 
+// Footer Section
 footer {
     display: flex;
     justify-content: space-between;
@@ -200,4 +214,33 @@ footer .socials, .rights {
 
 .footer-links:last-child::after {
     content: '';
+}
+
+/* Media Query for screens 960px or less in width */
+@media (max-width: 960px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .svg-container {
+        display: none;
+    }
+
+    .wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: auto;
+    }
+    
+    section {
+        height: 45vh!important;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100vw;
+    }
 }
