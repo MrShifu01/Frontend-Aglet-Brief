@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---------- Favicon ---------->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!---------- Title ---------->
+    <title>Aglet | Frontend</title>
+
+    <!---------- CSS Links ---------->
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+
+  <body>
+    <!---------- Transition Loading ---------->
+    <div id="transition-overlay">
+      <p
+        id="loading-text"
+        class="text-focus-in text-blur-out"
+        style="display: none"
+      >
+        Loading, please wait...
+      </p>
+    </div>
+
+    <!---------- Navbar ---------->
+    <nav>
+      <div class="nav-image-container">
+        <a href="/index.html"><img src="assets/aglet_logo.svg" alt="aglet logo" class="nav-logo" /></a>
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-link" href="/index.html">home</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link nav-active" href="/contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!---------- Main ---------->
+    <div class="contact-container">
+      <!-- Hello Overlay -->
+      <div class="contact-hello">hello</div>
+
+      <!-- Image -->
+      <div class="contact-image-container">
+        <img
+          class="contact-image"
+          src="assets/contact-image.jpg"
+          alt="office boardroom"
+        />
+      </div>
+
+      <!-- Text -->
+      <div class="contact-text-container">
+        <p class="contact-text-1">
+          my name is <strong>Christian Stander,</strong> and I am currently
+          watching a series called <strong>Succession.</strong>
+        </p>
+
+        <div class="contact-details">
+          <p>you can reach me on:</p>
+          <p>
+            <strong>tel:</strong> <a href="">063 293 4685</a>
+          </p>
+          <p>
+            <strong>email:</strong>
+            <a href="mailto:stander.christian@gmail.com"
+              >stander.christian@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-socials-container">
+          <p>share:</p>
+          <div class="contact-socials">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="assets/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="assets/twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.google.com/" target="_blank"
+              ><img src="assets/google.svg" alt="google"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- Footer ---------->
+    <footer class="footer">
+      <div class="rights">
+        <p>
+          All rights reserved<a href="#" class="footer-links">Impressum</a
+          ><a href="#" class="footer-links">Datenschutz</a
+          ><a href="#" class="footer-links">AGB</a
+          ><a href="#" class="footer-links">Code of Conduct</a
+          ><a href="#" class="footer-links">Hinweisgeberschutzgesetz</a>
+        </p>
+      </div>
+      <div class="socials">
+        <p>
+          Join us on <a href="#" class="footer-links">Instagram</a
+          ><a href="#" class="footer-links">LinkedIn</a>
+        </p>
+      </div>
+    </footer>
+
+    <!---------- Scripts ---------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/playvid.js"></script>
+  </body>
+</html>

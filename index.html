@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---------- Favicon ---------->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!---------- Title ---------->
     <title>Aglet | Frontend</title>
+
+    <!---------- CSS Links ---------->
     <link rel="stylesheet" href="scss/style.css" />
   </head>
+
   <body>
-    <!-- Navbar -->
+
+    <!---------- Transition Loading ---------->
+    <div id="transition-overlay">
+      <p id="loading-text"  class="text-focus-in text-blur-out" style="display: none;">Loading, please wait...</p>
+    </div>
+
+    <!---------- Navbar ---------->
     <nav>
       <div class="nav-image-container">
-        <img src="assets/aglet_logo.svg" alt="aglet logo" class="nav-logo" />
+        <a href="/index.html"><img src="assets/aglet_logo.svg" alt="aglet logo" class="nav-logo" /></a>
       </div>
       <div>
         <ul class="nav-list">
-          <li class="nav-list-item">home</li>
-          <li class="nav-list-item">contact</li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="/index.html">home</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="/contact.html">contact</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Carousel -->
+    <!---------- Carousel ---------->
     <div class="wrapper">
       <div class="container scrollx">
-        <section class="sec1 pin">
+        <!-- Section 1 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -43,7 +62,9 @@
             </div>
           </div>
         </section>
-        <section class="sec2 pin">
+
+        <!-- Section 2 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -55,12 +76,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Stage Three</h2>
+              <p>BMW</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 3 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -75,12 +98,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Easy Rider</h2>
+              <p>8 Seconds</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 4 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -92,12 +117,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">EQ Stage</h2>
+              <p>Mercedes-Benz</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 5 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -109,12 +136,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Formula</h2>
+              <p>ONE</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 6 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -129,12 +158,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Making of Eight</h2>
+              <p>IAA</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 7 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -146,12 +177,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Katjes</h2>
+              <p>Stage One</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 8 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -166,12 +199,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Mercedes</h2>
+              <p>Leon</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 9 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -183,12 +218,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Risk One</h2>
+              <p>NiskerOne</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 10 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -203,12 +240,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">G Class</h2>
+              <p>DNA</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 11 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -220,12 +259,14 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Grow Up Stage</h2>
-              <p>Modul</p>
+              <h2 class="image-heading">Staged Up</h2>
+              <p>X-Mas</p>
             </div>
           </div>
         </section>
-        <section class="sec3 pin">
+
+        <!-- Section 12 -->
+        <section>
           <div class="image-container">
             <video
               muted
@@ -240,8 +281,8 @@
               Your browser does not support the video tag.
             </video>
             <div class="text-container">
-              <h2 class="image-heading">Magical Garage 2</h2>
-              <p>Mercedes-Benz</p>
+              <h2 class="image-heading">Time Two Look</h2>
+              <p>Up Again</p>
             </div>
           </div>
         </section>
@@ -280,17 +321,26 @@
       </div>
     </div>
 
+    <!---------- Footer ---------->
     <footer class="footer">
       <div class="rights">
         <p>
-          All rights reserved<a href="#" class="footer-links">Impressum</a><a href="#" class="footer-links">Datenschutz</a><a href="#" class="footer-links">AGB</a><a href="#" class="footer-links">Code of Conduct</a><a href="#" class="footer-links">Hinweisgeberschutzgesetz</a>
+          All rights reserved<a href="#" class="footer-links">Impressum</a
+          ><a href="#" class="footer-links">Datenschutz</a
+          ><a href="#" class="footer-links">AGB</a
+          ><a href="#" class="footer-links">Code of Conduct</a
+          ><a href="#" class="footer-links">Hinweisgeberschutzgesetz</a>
         </p>
       </div>
       <div class="socials">
-        <p>Join us on <a href="#" class="footer-links">Instagram</a><a href="#" class="footer-links">LinkedIn</a></p>
+        <p>
+          Join us on <a href="#" class="footer-links">Instagram</a
+          ><a href="#" class="footer-links">LinkedIn</a>
+        </p>
       </div>
     </footer>
 
+    <!---------- Scripts ---------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/script.js"></script>
