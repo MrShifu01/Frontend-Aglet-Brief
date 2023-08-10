@@ -1,3 +1,5 @@
+
+// Horizontal and Smooth Scrolling, and Progress bar
 const container = document.querySelector(".container");
 const sections = gsap.utils.toArray(".container section");
 const mask = document.querySelector(".mask");
@@ -19,6 +21,7 @@ if (window.innerWidth > 960) {
   });
 }
 
+// Dim other sections on hover
 const dimSections = document.querySelectorAll(".image-container");
 
 dimSections.forEach(section => {
@@ -36,6 +39,7 @@ dimSections.forEach(section => {
     });
 });
 
+// Transition overlay
 const overlay = document.getElementById('transition-overlay');
 const loadingText = document.getElementById('loading-text');
 const navLinks = document.querySelectorAll('.nav-link');
